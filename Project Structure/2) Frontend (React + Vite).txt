@@ -1,0 +1,79 @@
+frontend/
+│── public/                   # Static assets
+│   ├── images/               # Store images/logos
+│   ├── favicon.ico           # Favicon
+│   ├── robots.txt            # SEO related file
+│   ├── manifest.json         # PWA configuration
+│
+│── src/
+│   ├── assets/               # Static assets (icons, fonts, images)
+│   │   ├── styles/           # Global styles
+│   │   │   ├── index.css
+│   │   │   ├── variables.css
+│   │   │   └── themes.css
+│   │   ├── images/           # Images folder
+│   │
+│   ├── components/           # Reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Button.jsx
+│   │   ├── Table.jsx
+│   │   ├── Modal.jsx
+│   │
+│   ├── features/             # Feature-based components
+│   │   ├── auth/             # Authentication pages & components
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── AuthService.js
+│   │   ├── dashboard/        # Dashboard components
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── DashboardStats.jsx
+│   │   ├── doctors/          # Doctor-related pages
+│   │   │   ├── DoctorsList.jsx
+│   │   │   ├── DoctorProfile.jsx
+│   │   ├── patients/         # Patient-related pages
+│   │   │   ├── PatientsList.jsx
+│   │   │   ├── PatientProfile.jsx
+│   │   ├── appointments/     # Appointments management
+│   │   │   ├── AppointmentsList.jsx
+│   │   │   ├── BookAppointment.jsx
+│   │   ├── medical-records/  # Medical records section
+│   │   │   ├── MedicalRecordsList.jsx
+│   │   │   ├── MedicalRecordDetails.jsx
+│   │
+│   ├── hooks/                # Custom React Hooks
+│   │   ├── useAuth.js
+│   │   ├── useFetch.js
+│   │
+│   ├── context/              # React Context API for global state
+│   │   ├── AuthContext.jsx
+│   │   ├── ThemeContext.jsx
+│   │
+│   ├── services/             # API service calls
+│   │   ├── api.js            # API base setup
+│   │   ├── authService.js
+│   │   ├── doctorService.js
+│   │   ├── patientService.js
+│   │   ├── appointmentService.js
+│   │   ├── medicalRecordService.js
+│   │
+│   ├── pages/                # Page components
+│   │   ├── Home.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── Doctors.jsx
+│   │   ├── Patients.jsx
+│   │   ├── Appointments.jsx
+│   │   ├── MedicalRecords.jsx
+│   │
+│   ├── routes/               # React Router configuration
+│   │   ├── AppRoutes.jsx
+│   │
+│   ├── App.jsx               # Main App component
+│   ├── main.jsx              # Entry point for React
+│
+│── package.json              # Frontend dependencies
+│── vite.config.js            # Vite configuration
+│── .env                      # Frontend environment variables
+│── .gitignore                # Ignore node_modules, env files

@@ -1,0 +1,16 @@
+📌 Frontend:
+  • React.js + Vite
+  • React Router
+  • Axios for API calls
+  • React Context / Redux (for State Management)
+  • TailwindCSS / Bootstrap for UI
+
+📌 Backend:
+  • Node.js + Express.js
+  • MongoDB (Mongoose ODM)
+  • JWT Authentication
+  • Bcrypt for Password Hashing
+  • Winston / Morgan for Logging
+  • Cloudinary for Image Uploads (optional)
+
+above code does not change anything only comments and explanation  

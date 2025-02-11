@@ -1,0 +1,7 @@
+hospital-management-system/
+│── backend/                  # Backend (Node.js + Express + MongoDB)
+│── frontend/                 # Frontend (React + Vite)
+│── package.json              # Root project configuration (for monorepo setup)
+│── README.md                 # Project documentation
+│── .gitignore                # Git ignore file
+│── .env                      # Root environment variables

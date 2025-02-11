@@ -1,0 +1,59 @@
+backend/
+│── src/
+│   ├── config/               # Configuration files (DB, environment)
+│   │   ├── db.js             # MongoDB connection setup
+│   │   ├── dotenv.js         # Load environment variables
+│   │   └── logger.js         # Logging setup (winston/morgan)
+│   │
+│   ├── models/               # Mongoose Models/Schemas
+│   │   ├── User.model.js
+│   │   ├── Doctor.model.js
+│   │   ├── Patient.model.js
+│   │   ├── Appointment.model.js
+│   │   ├── MedicalRecord.model.js
+│   │   └── Prescription.model.js
+│   │
+│   ├── routes/               # API Routes
+│   │   ├── auth.routes.js
+│   │   ├── user.routes.js
+│   │   ├── doctor.routes.js
+│   │   ├── patient.routes.js
+│   │   ├── appointment.routes.js
+│   │   ├── medicalRecord.routes.js
+│   │   ├── prescription.routes.js
+│   │   └── payment.routes.js
+│   │
+│   ├── controllers/          # Controllers (Business Logic)
+│   │   ├── auth.controller.js
+│   │   ├── user.controller.js
+│   │   ├── doctor.controller.js
+│   │   ├── patient.controller.js
+│   │   ├── appointment.controller.js
+│   │   ├── medicalRecord.controller.js
+│   │   ├── prescription.controller.js
+│   │   └── payment.controller.js
+│   │
+│   ├── middlewares/          # Middleware functions
+│   │   ├── authMiddleware.js  # JWT Authentication
+│   │   ├── errorHandler.js    # Global error handling
+│   │   ├── validateInput.js   # Input validation
+│   │
+│   ├── services/             # Business logic services
+│   │   ├── auth.service.js
+│   │   ├── doctor.service.js
+│   │   ├── patient.service.js
+│   │   ├── appointment.service.js
+│   │   ├── medicalRecord.service.js
+│   │   ├── prescription.service.js
+│   │   ├── payment.service.js
+│   │
+│   ├── utils/                # Utility functions
+│   │   ├── generateToken.js   # JWT token creation
+│   │   ├── sendEmail.js       # Email service
+│   │
+│   ├── app.js                # Express application setup
+│   ├── server.js             # Server entry point
+│
+│── package.json              # Backend dependencies
+│── .env                      # Backend environment variables
+│── .gitignore                # Ignore node_modules, env files

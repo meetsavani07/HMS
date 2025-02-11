@@ -1,0 +1,44 @@
+1. Admin Frontend (admin-frontend/)
+  • React + Vite for the Admin Dashboard
+  • Pages: Doctors, Patients, Appointments, Payments, Settings, Login
+
+2. Public Frontend (public-frontend/)
+  • React + Vite for the Public Website
+  • Pages: Home, About, Contact, Doctors, Book Appointment, Login/Register
+
+3. Backend (backend/)
+  • Express.js + MongoDB for API
+  • Separate APIs for Admin & Public Users
+  • Uses JWT authentication & Role-based access control
+  • Mongoose models for Database Management
+
+
+backend/
+├── src/
+│   ├── config/
+│   │   ├── index.js        # Exports all configurations
+│   │   ├── db.js          # Database configuration
+│   │   ├── passport.js    # Passport configuration
+│   │   └── logger.js      # Logger configuration
+│   │
+│   ├── controllers/
+│   │   ├── auth.controller.js    # Authentication logic
+│   │   └── ...
+│   │
+│   ├── middleware/
+│   │   ├── auth.js              # Authentication middleware
+│   │   └── errorHandler.js      # Error handling middleware
+│   │
+│   ├── models/
+│   │   ├── User.js             # User model
+│   │   └── ...
+│   │
+│   ├── routes/
+│   │   ├── index.js           # Route aggregator
+│   │   ├── auth.routes.js     # Auth routes
+│   │   └── ...
+│   │
+│   └── server.js              # Main application file
+│
+├── .env                       # Environment variables
+└── package.json              # Project dependencies

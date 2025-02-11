@@ -1,0 +1,151 @@
+hospital-management-system/
+│── admin-frontend/          # Admin Dashboard (React + Vite)
+│   ├── public/              # Static assets (images, icons, etc.)
+│   ├── src/
+│   │   ├── assets/          # Logos, icons, images
+│   │   ├── components/      # Reusable UI components
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── Table.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Form.jsx
+│   │   │   └── Loader.jsx
+│   │   ├── pages/           # Admin pages
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Doctors.jsx
+│   │   │   ├── Patients.jsx
+│   │   │   ├── Appointments.jsx
+│   │   │   ├── MedicalRecords.jsx
+│   │   │   ├── Payments.jsx
+│   │   │   ├── Settings.jsx
+│   │   │   └── Login.jsx
+│   │   ├── hooks/           # Custom hooks
+│   │   ├── context/         # Global state management (React Context)
+│   │   ├── services/        # API calls (axios)
+│   │   ├── routes/          # React Router setup
+│   │   ├── App.jsx          # Main App Component
+│   │   ├── main.jsx         # Entry Point
+│   │   ├── index.css        # Global styles
+│   │   ├── vite.config.js   # Vite Config
+│   ├── package.json         # Dependencies
+│   ├── .env                 # Environment variables
+│   ├── .gitignore           # Ignore node_modules
+│
+│── public-frontend/         # Public User Website (React + Vite)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/          # Logos, images
+│   │   ├── components/      # Reusable components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Hero.jsx
+│   │   │   ├── DoctorCard.jsx
+│   │   │   ├── AppointmentForm.jsx
+│   │   │   └── Testimonials.jsx
+│   │   ├── pages/           # Public pages
+│   │   │   ├── Home.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Doctors.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   ├── BookAppointment.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── Profile.jsx
+│   │   ├── hooks/
+│   │   ├── context/
+│   │   ├── services/        # API Calls
+│   │   ├── routes/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── index.css
+│   │   ├── vite.config.js
+│   ├── package.json
+│   ├── .env
+│   ├── .gitignore
+│
+│── backend/                 # Backend (Node.js + Express + MongoDB)
+│   ├── src/
+│   │   ├── config/          
+│   │   │   ├── db.js         # MongoDB connection
+│   │   │   ├── dotenv.js     # Load environment variables
+│   │   ├── models/          
+│   │   │   ├── User.model.js
+│   │   │   ├── Admin.model.js
+│   │   │   ├── Doctor.model.js
+│   │   │   ├── Patient.model.js
+│   │   │   ├── Appointment.model.js
+│   │   │   ├── MedicalRecord.model.js
+│   │   │   ├── Prescription.model.js
+│   │   │   ├── Payment.model.js
+│   │   │   ├── Feedback.model.js
+│   │   ├── routes/
+│   │   │   ├── admin/       
+│   │   │   │   ├── adminAuth.routes.js
+│   │   │   │   ├── adminUsers.routes.js
+│   │   │   │   ├── adminDoctors.routes.js
+│   │   │   │   ├── adminPatients.routes.js
+│   │   │   │   ├── adminAppointments.routes.js
+│   │   │   │   ├── adminPayments.routes.js
+│   │   │   │   └── adminDashboard.routes.js
+│   │   │   ├── public/      
+│   │   │   │   ├── auth.routes.js
+│   │   │   │   ├── doctors.routes.js
+│   │   │   │   ├── patients.routes.js
+│   │   │   │   ├── appointments.routes.js
+│   │   │   │   ├── payments.routes.js
+│   │   │   │   ├── feedback.routes.js
+│   │   │   │   └── dashboard.routes.js
+│   │   ├── controllers/    
+│   │   │   ├── admin/       
+│   │   │   ├── public/      
+│   │   ├── middlewares/    
+│   │   │   ├── authMiddleware.js
+│   │   │   ├── errorHandler.js
+│   │   │   ├── validateInput.js
+│   │   ├── services/       
+│   │   ├── utils/          
+│   │   │   ├── generateToken.js
+│   │   │   ├── sendEmail.js
+│   │   ├── app.js         
+│   │   ├── server.js       
+│   ├── package.json       
+│   ├── .env               
+│   ├── .gitignore         
+│
+│── README.md               # Documentation
+
+
+
+
+src/
+├── Frontend/
+│   ├── assets/              # Static assets (images, styles)
+│   ├── components/          # Reusable UI components
+│   │   ├── admin/          # Admin-specific components
+│   │   ├── user/           # User-specific components
+│   │   └── common/         # Shared components
+│   ├── contexts/           # React contexts
+│   ├── hooks/              # Custom hooks
+│   ├── pages/              # Page components
+│   │   ├── admin/         # Admin pages
+│   │   ├── user/          # User pages
+│   │   └── Auth/          # Authentication pages
+│   ├── types/              # TypeScript type definitions
+│   ├── utils/              # Utility functions
+│   ├── App.tsx             # Main App component
+│   └── main.tsx            # Entry point
+│
+└── Backend/
+    ├── config/             # Configuration files
+    │   ├── db.ts          # Database configuration
+    │   ├── logger.ts      # Logging configuration
+    │   └── passport.ts    # Passport authentication config
+    ├── controllers/        # Route controllers
+    ├── middleware/         # Custom middleware
+    ├── models/            # Database models
+    ├── routes/            # API routes
+    ├── services/          # Business logic
+    ├── types/             # TypeScript type definitions
+    ├── utils/             # Utility functions
+    └── server.ts          # Server entry point
+
